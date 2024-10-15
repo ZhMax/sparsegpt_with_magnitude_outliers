@@ -26,4 +26,6 @@ We provide a quick overview of the arguments:
 - `--save`: Specifies the directory where the result will be stored.
 - `--save_model path_to_save pruned model`: Specifies the directory where the pruned model will be stored.
 
+## Implementation
 This repo is copy of [ADMM pruning](https://github.com/fmfi-compbio/admm-pruning) repository with our additions. 
+To insert outliers in weights in the `SparseGPT` pruning method  we modify the `prune_sparsegpt` procedure in `/lib/prune.py`. See lines 359-371 in the file.
